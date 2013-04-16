@@ -1,0 +1,65 @@
+<!--
+ * Voice Lamp application.
+ * Copyright (C) 2013  Vittorio Cuculo <me@vcuculo.com>
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+-->
+
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+  background-color: #ababab;
+}
+#popUpDiv{
+  z-index: 100;
+  position: absolute;
+  background-color: rgba(123, 123,123, 0.8);
+  display: none;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 150px;
+}
+#popupSelect{
+  z-index: 1000;
+  position: absolute;
+  top: 40px;
+  left: 150px;
+}
+</style>
+</head>
+<body>
+<center>
+<div id="popUpDiv">
+    <select id="popupSelect"></select>
+</div>
+<span id="port"></span>
+​<button type="button" id="disconnect" disabled>Disconnetti</button>
+<br>
+​<button type="button" id="red">Rosso</button>
+<button type="button" id="green">Verde</button>
+<button type="button" id="blue">Blu</button>
+<br>
+<button type="button" id="voice">Vocale</button>
+<br>
+<canvas id="bar" width="200" height="10"></canvas>
+<br>
+<div id="buffer"/>
+</center>
+<script src="functions.js"></script>
+</body>
+</html>

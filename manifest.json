@@ -1,0 +1,16 @@
+{
+  "name": "voiceLamp",
+  "description": "App to control lamp color using voice + Arduino.",
+  "version": "0.1",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "permissions": [
+    "experimental",
+    "serial"
+  ],
+  "icons": { "32": "lamp-32.jpg", "128": "lamp-128.jpg" }
+}
