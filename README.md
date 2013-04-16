@@ -2,8 +2,6 @@
 
 This application makes possible to interact with a lamp made with Arduino by using your voice and serial connection.
 
-Updated pod list in options page is from http://podupti.me/, thanks to [dmorley](https://github.com/dmorley).
-
 ## Installation
 
 ### From source
@@ -30,5 +28,4 @@ Enable the experimental API in your browser. You can do this in either of two wa
 More info about serial and experimental API:
 
 http://developer.chrome.com/apps/experimental.html
-
 http://developer.chrome.com/apps/serial.html
