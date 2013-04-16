@@ -1,7 +1,14 @@
 # Voice Lamp for Google Chrome
 
-This application makes possible to interact with a lamp made with Arduino by using your voice and serial connection.
-At the moment it works only for Italian language.
+This application makes possible to interact with a lamp made with **Arduino** by using your voice and a serial connection.
+
+It uses experimental APIs to create **serial communication** and to **record voice** using only **Javascript**.
+
+More info about serial and experimental APIs:  
+http://developer.chrome.com/apps/experimental.html  
+http://developer.chrome.com/apps/serial.html
+
+At the moment it works only for **Italian** language.
 
 ## Installation
 
@@ -25,9 +32,6 @@ Enable the experimental API in your browser. You can do this in either of two wa
 2. Specify the `--enable-experimental-extension-apis` flag each time you launch the browser. On Windows, you can do this by modifying the properties of the shortcut that you use to launch Google Chrome. For example:  
    `path_to_chrome.exe --enable-experimental-extension-apis`
 
-More info about serial and experimental API:  
-http://developer.chrome.com/apps/experimental.html  
-http://developer.chrome.com/apps/serial.html
 
 ## Arduino
 
