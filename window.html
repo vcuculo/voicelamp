@@ -20,27 +20,8 @@
 <html>
 <head>
 <meta charset="utf-8">
-<style>
-body {
-  background-color: #ababab;
-}
-#popUpDiv{
-  z-index: 100;
-  position: absolute;
-  background-color: rgba(123, 123,123, 0.8);
-  display: none;
-  top: 0;
-  left: 0;
-  width: 400px;
-  height: 150px;
-}
-#popupSelect{
-  z-index: 1000;
-  position: absolute;
-  top: 40px;
-  left: 150px;
-}
-</style>
+<link rel="stylesheet" href="vendor/hint.min.css"></link>
+<link rel="stylesheet" href="css/voicelamp.css"></link>
 </head>
 <body>
 <center>
@@ -48,18 +29,23 @@ body {
     <select id="popupSelect"></select>
 </div>
 <span id="port"></span>
-​<button type="button" id="disconnect" disabled>Disconnetti</button>
+​<button type="button" id="disconnect" disabled></button>
 <br>
-​<button type="button" id="red">Rosso</button>
-<button type="button" id="green">Verde</button>
-<button type="button" id="blue">Blu</button>
+​<button type="button" id="red"></button>
+<button type="button" id="green"></button>
+<button type="button" id="blue"></button>
 <br>
-<button type="button" id="voice">Vocale</button>
+<button type="button" id="voice"></button>
+​<select id="language">
+  <option value="it">Italiano</option>
+  <option value="en">English</option>
+</select>
 <br>
 <canvas id="bar" width="200" height="10"></canvas>
 <br>
-<div id="buffer"/>
+<div id="buffer"></div>
 </center>
-<script src="functions.js"></script>
+<script src="js/locale.js"></script>
+<script src="js/functions.js"></script>
 </body>
 </html>

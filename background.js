@@ -18,8 +18,14 @@
  */
 
 chrome.app.runtime.onLaunched.addListener(function() {
+  var w = 500;
+  var h = 150;
+  var left = (screen.width/2)-(w/2);
+  var top = (screen.height/2)-(h/2); 
   chrome.app.window.create('window.html', {
-    'width': 400,
-    'height': 150
+    width: w,
+    height: h,
+    left: left,
+    top: top,
   });
 });

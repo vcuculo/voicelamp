@@ -1,14 +1,16 @@
-# Voice Lamp for Google Chrome
+# Voice Lamp (Javascript + Arduino)
 
 This application makes possible to interact with a lamp made with **Arduino** by using your voice and a serial connection.
 
-It uses experimental APIs to create **serial communication** and to **record voice** using only **Javascript**.
+It uses experimental APIs to create **serial communication** and to **record voice** using just **Javascript**.
 
 More info about serial and experimental APIs:  
 http://developer.chrome.com/apps/experimental.html  
 http://developer.chrome.com/apps/serial.html
 
-At the moment it works only for **Italian** language.
+Currently it works only for **Italian** and **English** language, and supports the following vocal commands:  
+**en** : red, green, blue, yellow, cyan, magenta, white, turn off  
+**it** : rosso, verde, blu, giallo, ciano, magenta, bianco, spegni
 
 ## Installation
 
@@ -43,3 +45,4 @@ Enable the experimental API in your browser. You can do this in either of two wa
 ### Sketch
 
 https://github.com/vcuculo/voicelamp/blob/master/sketch/lamp/lamp.pde
+

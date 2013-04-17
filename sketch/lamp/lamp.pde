@@ -38,6 +38,10 @@ void loop() {
         setColor(ledPins, CYAN);
     } else if (incomingByte == 'm') {
         setColor(ledPins, MAGENTA);
+    } else if (incomingByte == 'w') {
+        setColor(ledPins, WHITE);
+    } else if (incomingByte == 'n') {
+        setColor(ledPins, BLACK);
     } 
   }
 }
@@ -46,7 +50,7 @@ void setColor(int* led, const boolean* color)
 {
   for(int i = 0; i < 3; i++){
     digitalWrite(led[i], color[i]);
-    digitalWrite(led[i], color[i+3]);
-    digitalWrite(led[i], color[i+6]);
+    digitalWrite(led[i+3], color[i]);
+    digitalWrite(led[i+6], color[i]);
   }
 }

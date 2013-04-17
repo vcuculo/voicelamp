@@ -1,0 +1,26 @@
+body {
+  background-color: #ababab;
+  font: 14px Tahoma, Helvetica, Arial, Sans-Serif;
+}
+#popUpDiv{
+  z-index: 100;
+  position: absolute;
+  background-color: rgba(123, 123,123, 0.8);
+  display: none;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 150px;
+}
+#popupSelect{
+  z-index: 1000;
+  position: absolute;
+  top: 40px;
+  left: 200px;
+}
+.hint--top:before, .hint--top:after {
+  left: -50%;
+}
+.hint--top:before {
+  margin-left: 100%;
+}
